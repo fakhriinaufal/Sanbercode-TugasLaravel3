@@ -18,4 +18,5 @@ class AnswerModel
         $new_item = DB::table('answers')->insert($data);
         return $new_item;
     }
+
 }

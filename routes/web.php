@@ -31,3 +31,11 @@ Route::post('/jawaban/{pertanyaan_id}', 'JawabanController@store'); // menyimpan
 
 Route::post('/jawaban/create/kirim', 'JawabanController@kirim'); // kiriman dari form
 
+Route::get('/pertanyaan/{id}', 'PertanyaanController@detail'); // menampilkan detail pertanyaan hingga jawaban-jawabannya
+
+Route::get('pertanyaan/{id}/edit', 'PertanyaanController@edit');
+
+Route::put('/pertanyaan/{id}', 'PertanyaanController@update'); // mengupdate data
+
+Route::delete('/pertanyaan/{id}', 'PertanyaanController@delete');
+
