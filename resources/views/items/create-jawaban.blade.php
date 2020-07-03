@@ -1,12 +1,12 @@
 @extends('utama.master')
 
 @section('content')
-    <form action="/pertanyaan/{{question_id}}" method="POST">
+    <form action="/jawaban/{{$pertanyaan_id}}" method="POST">
         @csrf
         <form>
             <div class="form-group">
                 <label for="judul">Question Id</label>
-                <input type="text" class="form-control" id="question_id" name="question_id" placeholder="Masukkan judul pertanyaan ...">
+            <input type="text" class="form-control" id="question_id" name="question_id" value="{{$pertanyaan_id}}" readonly>
             </div>
             <div class="form-group">
               <label for="profile_id">Profile Id</label>
